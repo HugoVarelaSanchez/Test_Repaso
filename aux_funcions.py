@@ -44,3 +44,22 @@ def obtener_respuesta():
             except no_valid_response:
                 print(f'\n{Fore.YELLOW}Escoja opcion [a b c d] en minusculas. Puede escojer [ s ] si quiere saltar la pregunta.{Style.RESET_ALL}\n')
     return eleccion
+
+
+def num_preguntas(num_max:int):
+
+    while True:
+
+            try:
+                eleccion = int(input('Total preguntas: '))
+                
+                if eleccion<1 or eleccion>num_max:
+                    raise no_valid_response
+                break
+
+
+            except ValueError:
+                print(f'\n{Fore.YELLOW}Debes introducir un numero entero.{Style.RESET_ALL}\n')
+            except no_valid_response:
+                print(f'\n{Fore.YELLOW}El minimo es 1 y el maximo es {num_max}.{Style.RESET_ALL}\n')
+    return eleccion

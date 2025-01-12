@@ -1,4 +1,4 @@
-from aux_funcions import get_items, obtener_respuesta
+from aux_funcions import get_items, obtener_respuesta, num_preguntas
 from Usuario import Usuario
 import random
 import sys
@@ -14,7 +14,7 @@ seguro = {0}
 
 
 #Añadir texto explicando como furula, usar s basicamente
-print('''
+print(f'''
 ╔════╗╔═══╗╔══╗╔════╗   ╔══╗╔══╗╔══╗╔═══╗
 ╚═╗╔═╝║╔══╝║╔═╝╚═╗╔═╝   ╚╗╔╝║╔═╝║╔╗║║╔═╗║
   ║║  ║╚══╗║╚═╗  ║║      ║║ ║║  ║╚╝║║╚═╝║
@@ -22,13 +22,16 @@ print('''
   ║║  ║╚══╗╔═╝║  ║║     ╔╝╚╗║╚═╗║║║║║║
   ╚╝  ╚═══╝╚══╝  ╚╝     ╚══╝╚══╝╚╝╚╝╚╝
       
-Si quieres contestar una pregunta introduce la respuesta {a b c d} en minusculas.
+Si quieres contestar una pregunta introduce la respuesta [a b c d] en minusculas.
 Si la quieres dejar en blanco, escriba s (skip).
 
 Pronto añadire mas preguntas
 Gracias por usar y mucho animo :)  
-''')
+      
+De cuatas preguntas quieres el test? (20, 50, ..., {len(preguntas)})
 
+''')
+longitud_test = num_preguntas(int(len(preguntas)))
 
 while True:
 
@@ -86,7 +89,7 @@ while True:
 
 
     #Una vez todas las preguntas se han preguntado, se termina
-    if len(preguntas) == len(seguro):
+    if len(seguro) == longitud_test:
         print(f'\n---------------------------------------------------------\n')
 
         print(f'\n\nHas completado todas las preguntas:')
@@ -99,6 +102,6 @@ while True:
         if nota <0:
             print(f'\n Nota final: 0   ({nota})')
         else:
-            print(f'\n Nota final: {nota}')
+            print(f'\n Nota final: {nota}\n\n')
         
-        sys.exit()
+        sys.exit('Programa finalizado')
