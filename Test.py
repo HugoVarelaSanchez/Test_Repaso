@@ -1,5 +1,5 @@
-from aux_funcions import get_items, obtener_respuesta, num_preguntas
-from Usuario import Usuario
+from archivos.aux_funcions import get_items, obtener_respuesta, num_preguntas
+from archivos.Usuario import Usuario
 import random
 import sys
 from colorama import Style, Fore

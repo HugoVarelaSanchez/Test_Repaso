@@ -1,7 +1,7 @@
 from colorama import Style, Fore
 def get_items():
 
-    with open('preguntas.txt', 'r', encoding='utf-8') as archivo:
+    with open('archivos/preguntas.txt', 'r', encoding='utf-8') as archivo:
         cnt = archivo.readlines()
 
     '''
