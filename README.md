@@ -1,6 +1,8 @@
 # Icap_tests
 Programa con test de repaso de ICAP
 
+Preguntas aleatorias con respuestas en orden aleatorio
+
 Faltan muchas preguntas por añadir, se iran añadiendo
 
 ## Instrucciones de uso
