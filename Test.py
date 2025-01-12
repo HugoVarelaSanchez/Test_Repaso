@@ -97,7 +97,9 @@ while True:
 
         
         #Calcular aqui la nota final
-        nota = (10 / len(preguntas)) * (jugador.acertadas - jugador.falladas / 2)
+        nota = (  (jugador.acertadas - jugador.falladas / 2) / len(preguntas) )*10
+        nota = round(nota, 2)
+      
         if nota <0:
             print(f'\n Nota final: 0   ({nota})')
         else:
