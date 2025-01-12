@@ -15,6 +15,8 @@ En una terminal, situarse en el directorio con los ficheros
 
 Ejecutar: python3 Test.py
 
+Necesitas tener instalada la libreria **colorama**
+
 ## Formas de añadir tus propias preguntas
 Actualmente, esta hecho de forma que tenga que tener obligatoriamente 4 respuestas.
 Debes añadir lineas de 7 en 7 en preguntas.txt siguiendo el formato:
