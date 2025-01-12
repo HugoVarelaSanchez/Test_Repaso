@@ -17,7 +17,7 @@ def get_items():
 
 
         #                 num         pregunta            respuesta 1             respuesta 2                       respuesta 3             respuesta 4
-        pregunta_nueva = [conjunto[0][3:], {conjunto[1][7:] : False}, {conjunto[2][7:] : False}, {conjunto[3][7:] : False}, {conjunto[4][7:] : False}]
+        pregunta_nueva = [conjunto[0][3:], {conjunto[1][2:] : False}, {conjunto[2][2:] : False}, {conjunto[3][2:] : False}, {conjunto[4][2:] : False}]
         
         respuesta_correcta = conv[conjunto[5][0]]
         pregunta_nueva[respuesta_correcta] = {list(pregunta_nueva[respuesta_correcta].keys())[0]: True}

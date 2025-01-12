@@ -3,7 +3,8 @@ Programa con test de repaso de ICAP
 
 Preguntas aleatorias con respuestas en orden aleatorio
 
-Faltan muchas preguntas por añadir, se iran añadiendo
+Total preguntas: 146
+
 
 ## Instrucciones de uso
 Descargar el repositorio
@@ -18,7 +19,7 @@ Debes añadir lineas de 7 en 7 en preguntas.txt siguiendo el formato:
 
 1- Pregunta               ( Se eliminan los 3 primeros caracteres en este caso 1- .)
 
-a. Respuesta 1        ( Para toda respuesta se eliminan las 7 primeros caracteres.
+a. Respuesta 1            ( Para toda respuesta se eliminan las 3 primeros caracteres.
 
 b. Respuesta 2        
 
