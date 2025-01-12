@@ -5,6 +5,8 @@ Preguntas aleatorias con respuestas en orden aleatorio
 
 Total preguntas: 146
 
+![Ejemplo programa tests](archivos/ejemplo.png)
+
 
 ## Instrucciones de uso
 Descargar el repositorio
