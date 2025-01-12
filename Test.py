@@ -23,7 +23,10 @@ print('''
   ╚╝  ╚═══╝╚══╝  ╚╝     ╚══╝╚══╝╚╝╚╝╚╝
       
 Si quieres contestar una pregunta introduce la respuesta {a b c d} en minusculas.
-Si la quieres dejar en blanco, escriba s (skipt).
+Si la quieres dejar en blanco, escriba s (skip).
+
+Pronto añadire mas preguntas
+Gracias por usar y mucho animo :)  
 ''')
 
 
