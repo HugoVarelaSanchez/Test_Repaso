@@ -93,7 +93,6 @@ while True:
         print(f'\n---------------------------------------------------------\n')
 
         print(f'\n\nHas completado todas las preguntas:')
-        jugador.acertadas += 1
         print(jugador)
 
         
