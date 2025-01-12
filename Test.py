@@ -89,7 +89,7 @@ while True:
 
 
     #Una vez todas las preguntas se han preguntado, se termina
-    if len(seguro) == longitud_test:
+    if len(seguro)-1 == longitud_test:
         print(f'\n---------------------------------------------------------\n')
 
         print(f'\n\nHas completado todas las preguntas:')
