@@ -190,8 +190,8 @@ b
 28-En Fibre Channel over Ethernet (FCoE) se encapsulan tramas FC en tramas Ethernet usando TCP/TP
 a. Verdadero
 b. Falso
-c. None
-d. None
+c.     
+d.     
 b
 
 29-¿Cuál es el ancho de banda máximo de un enlace PCLe 3.0 4x si cada carril proporciona 8 Gbps?
@@ -246,8 +246,8 @@ c
 36-Fibre Channel (FC) es una red fiable (sin pérdidas) ya que disponemos de control de flujo:
 a. Verdadero
 b. Falso
-c. None
-d. None
+c.      
+d.     
 a
 
 37-SAN permite a un servidor acceder a un dispositivo de almacenamiento
@@ -267,15 +267,15 @@ d
 39-La comunicación full-duplex permite comunicación unidireccional entre enlaces de forma simultánea:
 a. Verdadero
 b. Falso
-c. None
-d. None
+c.     
+d.     
 b
 
 40-Una unidad de estado sólido (SSD) por bus PCIe puede usar AHCI o NVMe como protocolo de comunicación:
 a. Verdadero
 b. Falso
-c. None
-d. None
+c.     
+d.     
 a
 
 41-¿Qué tipo de dispositivo de almacenamiento es una unidad de estado sólido o Solid State Drive (SSD)?
@@ -870,7 +870,7 @@ d
 a. No es un requisito disponer de una red SAN de almacenamiento
 b. Cada nodo tiene que tener 1 IP fija asignada en la red pública
 c. Se usan redes privadas separadas para la monitorización, la administración y el acceso de los usuarios a los servicios
-d. None 
+d.      
 a
 
 126Escoge la opción verdadera:

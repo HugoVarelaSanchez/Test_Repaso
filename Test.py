@@ -111,10 +111,16 @@ else:
     print(f'\nNota final: {nota}\n\n')
 
 
-if len(falladas) > 0:
+if len(falladas) > 1:
     print(f'\nFallaste las preguntas numero:', *falladas)
-elif len(nsnc)>0:
+elif len(falladas)>0:
+    print(f'\nFallaste la pregunta numero:', *falladas)
+
+if len(nsnc)>1:
     print(f'\nNo contestaste las preguntas numero:', *nsnc)
-elif jugador.acertadas == longitud_test:
+elif len(nsnc)>0:
+    print(f'\nNo contestaste la pregunta numero:', *nsnc)
+
+if jugador.acertadas == longitud_test:
     print(f'{Fore.MAGENTA}Hiciste un test perfecto!{Style.RESET_ALL}')
 
