@@ -3,7 +3,7 @@ Programa con test de repaso de ICAP
 
 Preguntas aleatorias con respuestas en orden aleatorio
 
-Total preguntas: 146
+Total preguntas: 151
 
 ![Ejemplo programa tests](archivos/ejemplo.png)
 
