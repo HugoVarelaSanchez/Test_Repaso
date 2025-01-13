@@ -7,6 +7,11 @@ Total preguntas: 146
 
 ![Ejemplo programa tests](archivos/ejemplo.png)
 
+***
+**Updates**:
+
+-5 Nuevas preguntas
+***
 
 ## Instrucciones de uso
 Descargar el repositorio
