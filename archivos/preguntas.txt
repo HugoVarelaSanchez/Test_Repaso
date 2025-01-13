@@ -29,7 +29,7 @@ d
 5- Escoge la opción verdadera:
 a. La información almacenada en las memorias DDR4 volátiles se pierde si no se refresca periódicamente
 b. Se pueden combinar servidores rack y blade con diferentes configuraciones en un mismo chasis
-c. Los formatos más comunes de los racks de servidores van de 1U a 4U
+c. Los formatos más comunes de los racks de servidores van de 4U a 8U
 d. Para conectar un cable par de trenzado de cobre a una NIC con puertos RJ-45 hay que usar un transceiver
 a
 
@@ -681,7 +681,7 @@ b
 a. Se basa en un bus serie dedicado en el que cada dispositivo conectado dispone de todo el ancho de banda disponible en el bus
 b. Permite el intercambio de dispositivos de almacenamiento en caliente (hot swapping)
 c. Hace uso del mismo protocolo de comunicación que SCSI, su predecesor basado en un bus paralelo
-d. Tiene soporte para encolar múltiples comandos (peticiones de E/S9 de forma similar a SCSI TCQ
+d. Tiene soporte para encolar múltiples comandos (peticiones de E/S9 de forma similar a SCSI TCQ)
 c
 
 99-Escoge la opción verdadera:
@@ -1019,3 +1019,38 @@ b. Los nodos frontales o cabecera (front-end/head) proporcionan los recursos com
 c. Ninguna de las otras respuestas es correcta
 d. El gestor de recursos del cluster se encarga de mantener una cola de trabajos pendientes de ejecución junto con los recursos que necesitan
 d
+
+147Escoge la opcion falsa
+a. O PUE mide la relación entre el consumo electrónico total y el consumo de cargas TIC do CPD y su valor óptimo es de 1. 
+b. Segun el estándar ANSI/TIA 942 un CPD no podra estar localizado demasiado proximo a unha embajada extranjera. 
+c. En el CPD se usan cables troncales de cobre para conectar os servidores a una red SAN. 
+d. En el sistema electrónico del CPD la componente que usa baterías para almacenar la carga eléctrica es el SAI.
+c
+
+148Escoge la opcion verdadera sobre iSCSI
+a. Es un estandar que permite desplegar una red SAN haciendo uso de redes basadas en TCP/IP
+b. Es una tecnología de red de baja latencia que permite transmitir el protocolo FCP sobre tramas Ethernet
+c. Es una tecnología IP que permite desplegar una red NAS directamente sobre tramas Ethernet
+d. Es un bus paralelo compartido que permite conectar hasta 16 dispositivos
+a
+
+149¿Que servicio de AWS seria el mas adecuado para almacenar copias de seguridad que, si es necesario, deben poder recuperarse en cuestion de unos pocos segundos?
+a. S3 Glacier Flexible Retrieval
+b. S3 Glacier Deep Archive
+c. S3 redundancia reducida
+d. S3 Glacier Instant Retrieval
+d
+
+150¿Cuál de las siguientes opciones permiten conectividad de tipo SAN?
+a. iSCSI, FC, DCB
+b. SCSI, PCIe, FCoE
+c. iSCSI, FC, FCoE
+d. SAS, iSCSI, SATA
+c
+
+151Un subsistema de disco o cabina de almacenamiento con redundancia en los buses internos...
+a. Puede aumentar el rendimiento de E/S mediante una configuracion activo/activo dependiendo del patron de acceso a los discos
+b. Ninguna de las otras respuestas es correcta
+c. Puede decidir que bus se usa para acceder a los discos mediante una configuracion activo/activo sin comparticion de la carga
+d. No pueden aumentar la disponibilidad con una configuracion activo/activo ya que cada bus siempre accede al mismo subconjunto de discos
+a
