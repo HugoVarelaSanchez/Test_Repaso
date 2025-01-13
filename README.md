@@ -13,6 +13,7 @@ Total preguntas: 151
 * 5 Nuevas preguntas
 * Enumeracion de las preguntas (ahora sabes cuantas preguntas llevas) 
 * Indica que preguntas has fallado a lo largo del test
+* test_sin_respuesta: Modificacion del original que no te dice si acertastes o fallaste hasta el final
 ***
 
 ## Instrucciones de uso
@@ -20,7 +21,7 @@ Descargar el repositorio
 
 En una terminal, situarse en el directorio con los ficheros
 
-Ejecutar: python3 Test.py
+Ejecutar: python3 Test.py  (lo mismo para test_sin_respuesta)
 
 Necesitas tener instalada la libreria **colorama**
 

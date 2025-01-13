@@ -7,6 +7,7 @@ from colorama import Style, Fore
 #Obtenemos las preguntas y el usuario
 preguntas = get_items()
 jugador = Usuario(0, 0, 0)
+incognita = Usuario('?', '?', '?')
 
 #Inicializamos variables
 n =len(preguntas)
@@ -25,7 +26,7 @@ print(f'''
 Si quieres contestar una pregunta introduce la respuesta [a b c d] en minusculas.
 Si la quieres dejar en blanco, escriba s (skip).
 
-Pronto añadire mas preguntas
+No se daran los resultados hasta el final.
 Gracias por usar y mucho animo :)  
       
 De cuatas preguntas quieres el test? (20, 50, ..., {len(preguntas)})
@@ -45,7 +46,7 @@ for i in range(1, longitud_test+1):
 
     print(f'\n---------------------------------------------------------\n')
     #Imprimimos aciertos, fallos, skipped
-    print(f'{jugador}\n')
+    print(f'{incognita}\n')
 
     #Escojemos orden aleatorio de respuestas
     valores = random.sample([1, 2, 3, 4], 4)
@@ -79,16 +80,16 @@ for i in range(1, longitud_test+1):
     if respuesta == 's':
         jugador.no_contestadas += 1
         nsnc.append(i)
-        print(f'\n La respuesta correcta era: {respuesta_correcta}\n')
+        #print(f'\n La respuesta correcta era: {respuesta_correcta}\n')
 
     else:
         if list(actual[conv2[respuesta]].values())[0] == True:
             jugador.acertadas += 1
-            print(f'\n{Fore.GREEN}¡Correcto!\n\n{Style.RESET_ALL}')
+            #print(f'\n{Fore.GREEN}¡Correcto!\n\n{Style.RESET_ALL}')
         else:
             jugador.falladas += 1
             falladas.append(i)
-            print(f'\n{Fore.RED}¡Falso!{Style.RESET_ALL}\n La respuesta correcta era: {respuesta_correcta}\n')
+            #print(f'\n{Fore.RED}¡Falso!{Style.RESET_ALL}\n La respuesta correcta era: {respuesta_correcta}\n')
     
 
 
