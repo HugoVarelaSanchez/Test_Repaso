@@ -10,7 +10,9 @@ Total preguntas: 151
 ***
 **Updates**:
 
--5 Nuevas preguntas
+* 5 Nuevas preguntas
+* Enumeracion de las preguntas (ahora sabes cuantas preguntas llevas) 
+* Indica que preguntas has fallado a lo largo del test
 ***
 
 ## Instrucciones de uso

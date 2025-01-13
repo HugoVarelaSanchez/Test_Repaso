@@ -10,8 +10,7 @@ jugador = Usuario(0, 0, 0)
 
 #Inicializamos variables
 n =len(preguntas)
-seguro = {0}
-
+falladas = []
 
 #Añadir texto explicando como furula, usar s basicamente
 print(f'''
@@ -33,7 +32,15 @@ De cuatas preguntas quieres el test? (20, 50, ..., {len(preguntas)})
 ''')
 longitud_test = num_preguntas(int(len(preguntas)))
 
-while True:
+orden = []
+for i in range(1, len(preguntas)+1):
+    orden.append(i)
+
+orden = random.sample(orden, len(orden))
+
+
+for i in range(1, longitud_test+1):
+
 
     print(f'\n---------------------------------------------------------\n')
     #Imprimimos aciertos, fallos, skipped
@@ -48,24 +55,20 @@ while True:
     #vuelve a calcular hasta que se encuentre una que no se pregunto
     #Y la almacena en las ya guardadas
     
-    eleccion_pregunta = random.randint(1, n)
+    eleccion_pregunta = orden[i-1]
 
-    while eleccion_pregunta in seguro: 
-        eleccion_pregunta = random.randint(1, n)
-    
-    seguro.add(eleccion_pregunta)
 
     #Cojemos eleccion pregunta -1 porque va de 1 a 50
     actual = preguntas[eleccion_pregunta]
     
 
     #Imprimimos pregunta y respuestas
-    print(f'''{actual[0]}
+    print(f'''{i}. {actual[0]}
 \ta.- {list(actual[a].keys())[0]}\tb.- {list(actual[b].keys())[0]}\tc.- {list(actual[c].keys())[0]}\td.- {list(actual[d].keys())[0]}\n''')
     
-    for i in range(1, 5):
-        if list(actual[i].values())[0] == True:
-            respuesta_correcta = list(actual[i].keys())[0].strip()
+    for u in range(1, 5):
+        if list(actual[u].values())[0] == True:
+            respuesta_correcta = list(actual[u].keys())[0].strip()
     
 
 
@@ -82,27 +85,32 @@ while True:
             print(f'\n{Fore.GREEN}¡Correcto!\n\n{Style.RESET_ALL}')
         else:
             jugador.falladas += 1
+            falladas.append(i)
             print(f'\n{Fore.RED}¡Falso!{Style.RESET_ALL}\n La respuesta correcta era: {respuesta_correcta}\n')
     
 
 
 
 
-    #Una vez todas las preguntas se han preguntado, se termina
-    if len(seguro)-1 == longitud_test:
-        print(f'\n---------------------------------------------------------\n')
+#Una vez todas las preguntas se han preguntado, se termina
+print(f'\n---------------------------------------------------------\n')
 
-        print(f'\n\nHas completado todas las preguntas:')
-        print(jugador)
+print(f'\n\nHas completado todas las preguntas:')
+print(jugador)
 
-        
-        #Calcular aqui la nota final
-        nota = (  (jugador.acertadas - jugador.falladas / 2) / longitud_test )*10
-        nota = round(nota, 2)
-      
-        if nota <0:
-            print(f'\n Nota final: 0   ({nota})')
-        else:
-            print(f'\n Nota final: {nota}\n\n')
-        
-        sys.exit('Programa finalizado')
+
+#Calcular aqui la nota final
+nota = (  (jugador.acertadas - jugador.falladas / 2) / longitud_test )*10
+nota = round(nota, 2)
+
+if nota <0:
+    print(f'\nNota final: 0   ({nota})')
+else:
+    print(f'\nNota final: {nota}\n\n')
+
+
+if len(falladas) > 0:
+    print(f'\nFallaste las preguntas numero:', *falladas)
+elif jugador.acertadas == longitud_test:
+    print(f'{Fore.MAGENTA}Hiciste un test perfecto!{Style.RESET_ALL}')
+

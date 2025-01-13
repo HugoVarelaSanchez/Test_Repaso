@@ -63,3 +63,4 @@ def num_preguntas(num_max:int):
             except no_valid_response:
                 print(f'\n{Fore.YELLOW}El minimo es 1 y el maximo es {num_max}.{Style.RESET_ALL}\n')
     return eleccion
+
