@@ -486,7 +486,7 @@ a. Aumentar el quorum en las particiones que no fueran cercadas
 b. Cercar las particiones que no tengan el quorum
 c. Cercar las particiones que tengan el quorum
 d. Restaurar el quorum y cerca el nodo que tenga el STONITH
-c
+b
 
 71-¿Cuál de las siguientes es un ejemplo de virtualización a nivel de kernel?
 a. KVM
