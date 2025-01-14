@@ -409,7 +409,7 @@ a. Los consumidores de servicios cloud pueden aprovisionar unilateralmente las c
 b. Los programadores son el perfil de usuario del modelo de servicio SaaS
 c. Los consumidores de servicios cloud pueden aprovisionar unilateralmente capacidades de computación en el recurso físico que prefieran del proveedor
 d. El Cloud Computing es una tecnología para la virtualización de la provisión de recursos de computación
-c
+a
 
 60-De los niveles de redundancia en el diseño de un sistema, ¿cuáles no tolerarían el fallo en una red de distribución?
 a. N+1, 2N+1
