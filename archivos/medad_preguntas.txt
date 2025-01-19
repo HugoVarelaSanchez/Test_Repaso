@@ -1,0 +1,447 @@
+001¿Que contiene la diagonal de la matriz varianzas-covarianzas?
+a. Las varianzas de las variables
+b. Las covarianzas de las variables
+c. La diagonal esta llena de 0
+d. La diagonal esta llena de 1
+a
+
+002¿Cualquier multiplo de un autovector es de nuevo un autovector con el mismo autovalor asociado?
+a. Verdadero
+b. Falso
+c.   
+d.   
+a
+
+003¿Que es una matriz semidefinida positiva?
+a. Una matriz diagonal donde todos sus elementos son positivos
+b. Una matriz cuadrada no simetrica donde todos sus autovalores son mayores o iguales a 0
+c. Una matriz diagonal donde todos sus autovalores son mayores o iaguales a 0 
+d. Una matriz cuadrada simetrica donde todos sus autovalores son mayores o iguales a 0
+d
+
+004Como se define la correlacion de dos variables
+a. Varianza(a) / ( Covarianza(a, b) )
+b. ( Covarianza(a, b) ) / Varianza(a)
+c. (Varianza(a)^2 * Varianza(b)^2 ) / covarianzas(a, b)
+d. Covarianza(a, b) / ( Varianza(a) * Varianza(b) )
+d
+
+005Como se puede obtener la matriz de correlaciones(P) a traves de la de var-cov(∑)
+a. P = A∑A
+b. P = A⁻¹ * ∑ * A⁻¹
+c. P = A⁻¹ * ∑ * A
+d. P = A * ∑ * A⁻¹
+b
+
+006Dados dos variables aleatorias X1, con media 1 y varianza 2, y X2 con media 3 y varianza 8, y tal que la correlación entre ambas es 0.25, entonces:
+a. Var(X1 - X2) = 8
+b. Var(2X1 - X2) = 2
+c. Var(X1 + X2) = 10.5
+d. Ninguna de las anteriores
+a
+
+007Las dos primeras componentes principales de un vector aleatorio:
+a. Tienen mayor varianza que la suma de las restantes
+b. Tienen correlación cero
+c. No cambian si estandarizamos todas las variables
+d. Ninguna de las anteriores
+b
+
+008Cuando no disponemos de los valores muestrales de las variables originales sino tan solo de las distancias entre puntos de la muestra en un análisis cluster:
+a. Puede usarse el método del centroide
+b. No puede usarse el método del encadenamiento simple
+c. Puede usarse el método del encadenamiento completo
+d. Ninguna de las anteriores
+c
+
+009Denotando por Z1 y Z2, la primera y segunda componente principal de un vector aleatorio con matriz var-cov Σ, indicar cuál de las siguientes afirmaciones puede darse:
+a. Var(Z1) = 3; Var(Z2) = 4
+b. Var(Z2) > 1/2tr(Σ)
+c. Var(Z1) = Var(Z2) = 100
+d. Ninguna de las anteriores
+b
+
+010El método de las k-medias:
+a. Puede implementarse mediante un dendograma
+b. Ofrece la misma solución cuando todas las variables originales se multiplican por una misma constante
+c. Llega a la misma solución si estandarizamos las variables
+d. Ninguna de las anteriores
+c
+
+011Sea (X1, X2)^T un vector aleatorio con distribución N2, matriz Σ = [[3, 3], [3, 5]], entonces la distribución de 2X1 - X2 es:
+a. N(0, 5)
+b. N((0; 0), [[12, -6], [-6, 5]])
+c. N(0, 8)
+d. Ninguna de las anteriores
+a
+
+012Para calcular un dendograma:
+a. Podemos utilizar cualquier método jerárquico
+b. Basta con conocer las distancias entre los puntos de la muestra, si el método de agrupación es el de encadenamiento completo
+c. Si, en cualquier caso
+d. Ninguna de las anteriores
+b
+
+013El método de las k-medias de MacQueen recalcula los centroides:
+a. Tras cada asignación
+b. Utilizando CP
+c. Solo al principio y al final del algoritmo
+d. Ninguna de las anteriores
+a
+
+014Dada la distancia de Mahalanobis, d, entre dos vectores x e y, y un escalar a > 0:
+a. d(...) = a * d(x, y)
+b. d(...) = a^t * Z^-1 * a
+c. d(...) = a^2 * d(x, y)
+d. Ninguna de las anteriores
+a
+
+015La primera componente principal tiene por coeficientes:
+a. El autovector correspondiente al autovalor mayor de Σ^-1
+b. El autovalor mayor
+c. El autovector correspondiente al autovalor mayor de Σ
+d. Ninguna de las anteriores
+c
+
+016¿Puede ser (4, -3, -3.2) la matriz var-cov de un vector aleatorio X?
+a. Sí, si p(x1, x2) = -3 / (2 sqrt(2))
+b. No puede serlo
+c. Sí, en cualquier caso
+d. Ninguna de las anteriores
+b
+
+017Dado un vector aleatorio con matriz var-cov [[3, 3], [3, 5]], las varianzas de sus componentes principales Z1 y Z2 son:
+a. Var(Z1) = 4 + sqrt(10); Var(Z2) = 4 - sqrt(10)
+b. Var(Z1) = 5; Var(Z2) = 3
+c. Var(Z1) = 1/2; Var(Z2) = 5/6
+d. Ninguna de las anteriores
+a
+
+018Denotando por dij la distancia ultramétrica entre las observaciones i y j en un dendograma, y sabiendo que d43 = 25 y d47 = 35, ¿cuál de las situaciones puede darse?
+a. d(3, 7) = 25
+b. d(3, 7) = 35
+c. d(3, 7) = 20
+d. Ninguna de las anteriores
+b
+
+019El problema del escalamiento multidimensional:
+a. Tiene tantas soluciones como filas tiene la matriz de distancias
+b. Tiene solución única siempre
+c. D = [[0, 1, 1], [1, 0, 1], [1, 1, 0]] tiene como solución los puntos (0, 0), (1, 0), (1/2, sqrt(3)/2)
+d. Ninguna de las anteriores
+c
+
+020Si en el método de las k-medias multiplicamos todos los datos por un mismo vector a > 0:
+a. Pasaremos a encontrar k * a grupos
+b. Si a > 1, los datos originalmente más cercanos...
+c. Los k grupos obtenidos no varían
+d. Ninguna de las anteriores
+c
+
+021Un algoritmo para elegir los puntos semilla iniciales en el método de las k-medias es:
+a. El de máxima verosimilitud
+b. El algoritmo de Ball y Hall
+c. El algoritmo single linkage
+d. Ninguna de las anteriores
+b
+
+022Para hacer clasificación no supervisada es útil:
+a. Un escalamiento multidimensional sobre las correlaciones
+b. La estimación tipo núcleo
+c. Calcular los autovalores...
+d. Ninguna de las anteriores
+b
+
+023El análisis factorial trata de expresar el vector aleatorio de partida, X, de la forma:
+a. X = B × Bt + Ψ, donde B es p × k y Ψ es una matriz diagonal
+b. Z = (Bt × B)^(-1)
+c. X = B × F + U, donde F es un vector de k factores
+d. Ninguna de las anteriores
+c
+
+024Los cuadrados de los coeficientes de correlación de un conjunto de variables pueden usarse:
+a. Como similitudes para realizar un análisis cluster entre variables
+b. Para realizar un análisis cluster entre los datos de una muestra
+c. Para calcular sus componentes principales
+d. Ninguna de las anteriores
+a
+
+025Dadas tan solo las discrepancias entre los elementos de una muestra, una técnica que permite representar los datos como puntos en un espacio de dimensión baja es:
+a. El escalamiento multidimensional
+b. El análisis factorial
+c. ACP
+d. Ninguna de las anteriores
+a
+
+026Dado vectores aleatorios X e Y con Yi = (Xi - μi) -𝜎i, i = 1, 2, ..., p. Sus matrices de Var-cov ∑x y ∑y y de correlaciones Rx y Ry cumplen:
+a. ∑x = ∑y
+b. Rx = ∑y
+c. ∑x = Ry
+d. Ninguna es correcta
+b
+
+027Sea (X1, X2)^t un vector aleatorio de distribucion: N2(  ([1], [1])  ,  ([3, 1], [1, 2])  ), la distribucion de X1-X2 es:
+a. N(0, 3)
+b. N2( ([0, 0]) , ([1, 0], [0, 1]) )
+c. N(0, 5)
+d. Ninguna es correcta
+a
+
+028Deotado por Z1 y Z2 la primera y segunda componente principal de un vector aleatorio con matriz var-cov ∑, que afirmacion puede darse:
+a. Var(Z1) = 3, Var(Z2) = 4
+b. Var(Z1 + Z2) > tr(∑)
+c. Var(Z1) = 0.001, Var(Z2) = 0.001
+d. Ninguna opcion es correcta
+c
+
+029La segunda componente principal de un vector aleatorio X con la matriz var-cov ∑, es de la forma Z2 = a^tX con:
+a. a segundo mayor autovector de ∑
+b. a un autovector asociado al segundo mayor autovalor de ∑
+c. a = ∑^t*X
+d. Ninguna opcion es correcta
+b
+
+030La probabilidad de clasificación incorrecta
+a. Es una función que asigna a cada observación su grupo de pertenencia
+b. Solo depende de la muestra obtenida
+c. Cambia con cada regla de clasificación
+d. Ninguna opcion es correcta 
+c
+
+031Las combinaciones lineales que mejor permiten separar los grupos pueden calcularse mediante
+a. Análisis factorial discriminante
+b. Análisis de componentes principales
+c. Análisis cluster
+d. Ninguna opcion es correcta
+a
+
+032La regla de clasificación que asigna iuna nueva observación con centroide con distancia de mahalanobis menor coincide
+a. Con la regla de Bayes con probabilidades a priori diferentes
+b. Con la regla de vecinos más cercanos
+c. Con la regla de máximo verosímil, bajo la normalidad
+d. Ninguna opcion es correcta  
+c
+
+033La regla del discriminante lineal de Fisher se calcula
+a. Utilizando un método de regresión lineal
+b. Proyectando según los factores discriminantes
+c. Proyectando según la primera componente principal
+d. Ningunaopcion es correcta
+b
+
+034La regla de clasificación de Bayes es la que asigna una futura observación,vector de x, al grupo i
+a. Que tiene mayor probabilidad P(X = x|Y = i)
+b. Con centroide a distancia de mahalanobis
+c. Con mayor probabilidad P(X = x| Y = i)
+d. Ninguna opcion es correcta
+a
+
+034El error aparente de una regla de clasificación es
+a. La proporción de veces en las que comete error cuando se evalúa sobre la propia muestra usada para contruirla
+b. La diferencia entre el error de clasificación y su media
+c. El menor error de clasificación posible
+d. Ninguna opcion es correcta  
+a
+
+035Al contrastar cuatro hipótesis nulas los p-valores obtenidos para cada una fueron(a,b,c,d): 0.0363 para H0a, 0.0024 para H0b, 0.00162 para H0c y 0.2491 para H0d. En un contexto de contrastes múltiples, con nivel de significación 0.05 las únicas hipótesis nulas que se rechazarían son
+a. H0a y H0b usando el método de Simes 
+b. H0b y H0c usando el método de Hochberg
+c. H0a, H0b y H0c usando el método de Hochberg
+d. Ninguan opcion es correcta
+b
+
+036La probabilidad de clasificación incorrecta
+a. Es una función que asigna a cada observación su grupo de pertenencia
+b. Solo depende de la muestra obtenida
+c. Cambia con cada regla de clasificación
+d. Ninguan opcion es correcta
+c
+
+037Las combinaciones lineales que mejor permiten separar los grupos pueden calcularse mediante
+a. Análisis factorial discriminante
+b. Análisis de componentes principales
+c. Análisis cluster
+d. Ninguan opcion es correcta
+a
+
+038La regla de clasificación que asigna iuna nueva observación con centroide con distancia de mahalanobis menor coincide
+a. Con la regla de Bayes con probabilidades a priori diferentes
+b. Con la regla de vecinos más cercanos
+c. Con la regla de máximo verosímil, bajo la normalidad
+d. Ninguan opcion es correcta  
+c
+
+039La regla del discriminante lineal de Fisher se calcula
+a. utilizando un método de regresión lineal
+b. proyectando según los factores discriminantes
+c. proyectando según la primera componente principal
+d. Ninguan opcion es correcta    
+b
+
+040La regla de clasificación de Bayes es la que asigna una futura observación,vector de x, al grupo i
+a. Que tiene mayor probabilidad P(X = x|Y = i)
+b. Con centroide a distancia de mahalanobis
+c. Con mayor probabilidad P(X = x| Y = i)
+d. Ninguan opcion es correcta 
+a
+
+041El error aparente de una regla de clasificación es
+a. La proporción de veces en las que comete error cuando se evalúa sobre la propia muestra usada para contruirla
+b. La diferencia entre el error de clasificación y su media
+c. El menor error de clasificación posible
+d. Ninguan opcion es correcta    
+a
+
+042Al contrastar cuatro hipótesis nulas los p-valores obtenidos para cada una fueron(a,b,c,d): 0.0363 para H0a, 0.0024 para H0b, 0.00162 para H0c y 0.2491 para H0d. En un contexto de contrastes múltiples, con nivel de significación 0.05 las únicas hipótesis nulas que se rechazarían son
+a. H0a y H0b usando el método de Simes 
+b. H0b y H0c usando el método de Hochberg
+c. H0a, H0b y H0c usando el método de Hochberg
+d. Ninguan opcion es correcta   
+b
+
+043Cuando se están contrastando k hipótesis nulas, con nivel de significación alfa ,la FWER del método de Simes es
+a. Menor igual que alfa/2
+b. Alfa, si las hipótesis nulas son ciertas y los contrastes independientes
+c. Menor que la FWER del método de Hochberg
+d. Ninguan opcion es correcta     
+b
+
+044El método de regresión riscal (ridge regression) penaliza l complejidad del modelo mediante
+a. La suma de los cuadrados de sus coeficientes
+b. La suma de valores absolutos de sus coeficientes
+c. El número de coeficientes nulos
+d.   
+a
+
+045Dados los vectores aleatorios 𝑋⃗ y 𝑌⃗⃗ con Yi = (Xi – 𝜇i)/𝜎i, i = 1, …, p, sus matrices de varianzas-covarianzas, ΣX y ΣY y de correlaciones RX y RY cumplen:
+a. ΣX = ΣY
+b. RX = ΣY
+c. ΣX = RY
+d. Ninguan opcion es correcta 
+b
+
+046Sea (X1, X2)t un vector aleatorio con distribución: N2((1 1), (3 1 1 2)) , entonces la distribución X1 -X2 es:
+a. N(0, 3)
+b. N2((0 0), (1 0 0 1))
+c. N(0, 5)
+d. Ninguan opcion es correcta
+a  
+
+047Denotando por Z1 y Z2 la primera y segunda componentes principales de un vector aleatorio con matriz de varianzas-covarianzas Σ, indicar cuál de las siguientes afirmaciones puede darse
+a. Var(Z1) = 3, Var(Z2) = 4
+b. Var(Z1) + Var(Z2) > tr(Σ)
+c. Var(Z1) = 0.001, Var(Z2) = 0.001
+d. Ninguan opcion es correcta
+c
+
+048La segunda componente principal de un vector aleatorio, 𝑋⃗ , con matriz de varianzas-covarianzas Σ, es de la forma Z2=𝑎⃗ t𝑋⃗ con:
+a. 𝑎⃗ el segundo mayor autovector de Σ
+b. 𝑎⃗ un autovector asociado al segundo mayor autovalor de Σ
+c. 𝑎⃗ = Σt𝑋⃗
+d. Ninguan opcion es correcta
+b 
+
+049Dado un vector aleatorio con matriz de varianzas-covarianzas Σ = (3 1 1 2), las varianzas de sus componentes principales, Z1 y Z2 son:
+a. Var(Z1) = (5+√5) 2 , Var(Z2) = (5−√5)2
+b. Var(Z1) = 3, Var(Z2) = 2
+c. Var(Z1) = 7 2, Var(Z2) = 3
+d.    
+a
+
+050El llevar a cabo el análisis de componentes principales sobre la matriz de correlaciones puede ser útil porque:
+a. No cambia con los cambios de escala
+b. Siempre equivale a hacerlo sobre la de varianzas-covarianzas
+c. Equivale a hacerlo sobre la de varianzas-covarianzas si las variables están medidas en las mismas unidades
+d. Ninguan opcion es correcta   
+a
+
+051Tras llevar a cabo un ACP sobre la matriz de correlaciones de un vector aleatorio de dimensión 10 y denotando por Z1 la primera componente principal, indicar cuál de las siguientes afirmaciones puede ocurrir:
+a. Var(Z1) = 12
+b. Var(Z1) = 0.9
+c. Var(Z1) = 2
+d.   
+c
+
+052El objetivo del escalamiento multidimensional es:
+a. Maximizar la variabilidad del conjunto de datos
+b. Minimizar las correlaciones entre las nuevas variables
+c. Representar los datos como puntos en un espacio de dimensión baja
+d. Ninguan opcion es correcta  
+c
+
+053La información de entrada para realizar un escalamiento multidimensional ha de ser necesariamente
+a. Una muestra de datos sobre los que se han medido p variables
+b. Una matriz de discrepancias o similitudes entre los elementos de una muestra
+c. La matriz de varianzas-covarianzas de 𝑋⃗
+d. Ninguan opcion es correcta
+b
+
+054¿Puede ser (3 2 2 1) la matriz de varianzas-covarianzas de un vector aleatorio 𝑋⃗ ?
+a. Sí, en cualquier caso
+b. Sí, si p(X1, X2) = 2/3
+c. No puede serlo
+d. Ninguan opcion es correcta  
+c
+
+055La distancia de Mahalanobis entre 𝑥⃗ e 𝑦⃗ es:
+a. [(𝑥⃗ - 𝑦⃗ )tΣ-1(𝑥⃗ - 𝑦⃗ )]1/2
+b. (𝑥⃗ - 𝑦⃗ )t(𝑥⃗ - 𝑦⃗ )
+c. (𝑥⃗ - 𝑦⃗ )t Σ1/2(𝑥⃗ - 𝑦⃗ )
+d. Ninguan opcion es correcta   
+c
+
+056Un dendograma es el resultado de aplicar
+a. Un método jerárquico de clasificación supervisada
+b. Un método no jerárquico de clasificación no supervisada
+c. Un método jerárquico de clasificación no supervisada
+d. Ninguan opcion es correcta
+c
+
+057Al realizar un análisis cluster, considerando dos grupos A y B formados en cierta etapa y las distancias entre grupos calculadas mediante el método del encadenamiento simple (dES) y el encadenamiento completo (dEC), se tiene:
+a. dES(A, B) ≥ dEC(A, B)
+b. dES(A, B) ≤ dEC(A, B)
+c. dES(A, B) ≤ dEC(A, B)2
+d. Ninguan opcion es correcta
+b
+
+058Para realizar un análisis cluster entre variables podemos partir de:
+a. Sus correlaciones como distancias entre ellas
+b. Los cuadrados de sus correlaciones como similitudes entre ellas
+c. Los cuadrados de sus correlaciones como distancias entre ellas
+d. Ninguan opcion es correcta   
+b
+
+059Un algoritmo para elegir los puntos semilla iniciales en el método de las k medias es.
+a. El algoritmo de Astrahan
+b. El algoritmo single linkage
+c. El análisis de componentes principales
+d. Ninguan opcion es correcta  
+a  
+
+060El método de las k medias de MacQueen recalcula los centroides
+a. Tras cada ciclo completo de asignaciones
+b. Tras cada asignación
+c. Solo al final del algoritmo
+d. Ninguan opcion es correcta
+b   
+
+061¿Cuál de los siguientes métodos puede usarse para la clasificación no supervisada?
+a. El método de las k medias
+b. El escalamiento multidimensional
+c. El análisis de componentes principales
+d. Ninguan opcion es correcta
+a     
+
+062La estimación tipo núcleo (o kernel) es útil para
+a. Realizar un análisis de componentes principales
+b. Hacer clasificación no supervisada
+c. Llevar a cabo escalamiento multidimensional
+d. Ninguan opcion es correcta  
+b   
+
+063Denotando por d*ij la distancia ultramétrica entre las observaciones i y j en un dendograma, y sabiendo que d*23 = 5, d*25 = 7, ¿cuál de las siguientes situaciones puede darse?
+a. d*35 = 4
+b. d*35 = 5
+c. d*35 = 7
+d. Ninguan opcion es correcta  
+c

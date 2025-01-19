@@ -1,9 +1,11 @@
 from colorama import Style, Fore
-def get_items():
-
-    with open('archivos/preguntas.txt', 'r', encoding='utf-8') as archivo:
-        cnt = archivo.readlines()
-
+def get_items(tipo):
+    if tipo == 'icap':
+        with open('archivos/preguntas.txt', 'r', encoding='utf-8') as archivo:
+            cnt = archivo.readlines()
+    elif tipo == 'medad':
+         with open('archivos/medad_preguntas.txt', 'r', encoding='utf-8') as archivo:
+            cnt = archivo.readlines()
     '''
     idea de como almacenar los items
     {numero de pregunta: [pregunta , {respuesta1:bool}, {respuesta2:bool}, {respuesta3:bool}, {respuesta4:bool}]}

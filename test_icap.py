@@ -5,7 +5,7 @@ import sys
 from colorama import Style, Fore
 
 #Obtenemos las preguntas y el usuario
-preguntas = get_items()
+preguntas = get_items('icap')
 jugador = Usuario(0, 0, 0)
 
 #Inicializamos variables
