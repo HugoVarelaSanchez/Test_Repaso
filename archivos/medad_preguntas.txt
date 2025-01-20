@@ -342,7 +342,7 @@ d. Ninguan opcion es correcta
 b 
 
 049Dado un vector aleatorio con matriz de varianzas-covarianzas Σ = (3 1 1 2), las varianzas de sus componentes principales, Z1 y Z2 son:
-a. Var(Z1) = (5+√5) 2 , Var(Z2) = (5−√5)2
+a. Var(Z1) = (5+√5)/2 , Var(Z2) = (5−√5)/2
 b. Var(Z1) = 3, Var(Z2) = 2
 c. Var(Z1) = 7 2, Var(Z2) = 3
 d.    
