@@ -59,14 +59,14 @@ a. Var(Z1) = 3; Var(Z2) = 4
 b. Var(Z2) > 1/2tr(Σ)
 c. Var(Z1) = Var(Z2) = 100
 d. Ninguna de las anteriores
-b
+c
 
 010El método de las k-medias:
 a. Puede implementarse mediante un dendograma
 b. Ofrece la misma solución cuando todas las variables originales se multiplican por una misma constante
 c. Llega a la misma solución si estandarizamos las variables
 d. Ninguna de las anteriores
-c
+b
 
 011Sea (X1, X2)^T un vector aleatorio con distribución N2 matrix(1;2), matrix[[3, 3], [3, 5]], entonces la distribución de 2X1 - X2 es:
 a. N(0, 5)
