@@ -68,7 +68,7 @@ c. Llega a la misma solución si estandarizamos las variables
 d. Ninguna de las anteriores
 c
 
-011Sea (X1, X2)^T un vector aleatorio con distribución N2, matriz Σ = [[3, 3], [3, 5]], entonces la distribución de 2X1 - X2 es:
+011Sea (X1, X2)^T un vector aleatorio con distribución N2 matrix(1;2), matrix[[3, 3], [3, 5]], entonces la distribución de 2X1 - X2 es:
 a. N(0, 5)
 b. N((0; 0), [[12, -6], [-6, 5]])
 c. N(0, 8)
