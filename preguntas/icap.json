@@ -1,0 +1,32 @@
+{
+    "1": {
+        "q": "Escoge la opción verdadera: En los servidores...",
+        "op": [
+            "Todos los tipos de memoria RAM usan conexiones DIMM de 288 pins",
+            "La pantalla, el teclado y las interfaces de red son opcionales",
+            "La arquitectura Xeon Scalable multinúcleo de 64 bits es la más común actualmente",
+            "Se usa memoria RAM persistente por ser más rápida"
+        ],
+        "ok": 2
+    },
+    "2": {
+        "q": "¿Cuál de los siguientes enunciados no es una técnica de virtualización de servidores?",
+        "op": [
+            "Virtualización basada en el uso de un hipervisor",
+            "Virtualización por emulación de kernel",
+            "Emulación de hardware",
+            "Virtualización a nivel de kernel"
+        ],
+        "ok": 1
+    },
+    "3": {
+        "q": "Escoge la opción falsa: En los servidores...",
+        "op": [
+            "Los módulos de memoria DIMM tienen contactos eléctricos independientes en las dos caras",
+            "El BMC es el encargado de las comunicaciones entre el procesador y el chipset",
+            "El PCIe es un bus de comunicaciones entre el procesador y las ranuras de expansión",
+            "La placa base es el circuito impreso al que se conectan todos los componentes del servidor"
+        ],
+        "ok": 1
+    }
+}

@@ -1,0 +1,281 @@
+{
+    "1": {
+        "q": "En aprendizaje supervisado, ¿los datos están etiquetados?",
+        "op": ["Verdadero", "Falso"],
+        "ok": 1
+    },
+    "2": {
+        "q": "¿En qué se asemeja la clasificación a un modelo de regresión?",
+        "op": [
+            "No se parecen en nada. Son dos tipos de problemas que abordan cosas diferentes",
+            "Son modelos de aprendizaje no supervisado.",
+            "Estimar una cantidad continua: La probabilidad de que un individuo pertenezca a una cierta clase"
+        ],
+        "ok": 3
+    },
+    "3": {
+        "q": "¿En qué consiste la regla de clasificación?",
+        "op": [
+            "Es una aplicación que a partir de los atributos del individuo lo clasifica en una clase",
+            "La regla general para clasificar correctamente a un individuo"
+        ],
+        "ok": 1
+    },
+    "4": {
+        "q": "¿En qué se diferencia la regla de clasificaación y el discriminante?",
+        "op": [
+            "En nada. Son equivalentes",
+            "El segundo tiene un mejor rendimiento para clasificar individuos",
+            "La regla de clasificación sirve para asignar a un individuo a una clase, mientras que el discriminante se basa en distinguir lo mejor posible los grupos."
+        ],
+        "ok": 3
+    },
+    "5": {
+        "q": "¿Qué criterios de error se emplean en clasificación supervisada?",
+        "op": [
+            "Clasificación incorrecta de un individuo.",
+            "Ponderación de errores",
+            "Todas las anteriores"
+        ],
+        "ok": 3
+    },
+    "6": {
+        "q": "El criterio de clasificación incorrecta de un individuo se basa en la proprobabilidad de clasificar a un individuo en un grupo incorrecto.",
+        "op": ["Verdadero", "Falso"],
+        "ok": 1
+    },
+    "7": {
+        "q": "El criterio de ponderación de errores considera que todos los errores tienen el mismo grado de importancia.",
+        "op": ["Verdadero", "Falso"],
+        "ok": 2
+    },
+    "8": {
+        "q": "¿En qué se basa el criterio de ponderación de errores?",
+        "op": [
+            "El sumatorio de las probabilidades de asignar a un individuo en todos los grupos menos al suyo.",
+            "El sumatorio del producto entre las probabilidades y sus pesos de asignar a un individuo en todos los grupos menos al suyo.",
+            "La proporción de veces que se clasifica incorrectamente a un individuo."
+        ],
+        "ok": 2
+    },
+    "9": {
+        "q": "¿Cuál(es) son los objetivos principales de la clasificación supervisada?",
+        "op": [
+            "Examinar las diferencias que existen entre los individuos que pertenecen a cada grupo",
+            "Predecir el grupo de un individuo en función de sus atributos.",
+            "Explicar la pertenencia de un individuo en función de sus propiedades.",
+            "Todas las anteriores."
+        ],
+        "ok": 4
+    },
+    "10": {
+        "q": "Las probabilidades de pertenecer a uno de los grupos son conocidas -> P(Y=i): i = 1, 2, ..., g",
+        "op": ["Verdadero", "Falso"],
+        "ok": 1
+    },
+    "11": {
+        "q": "¿Cuál es el objetivo principal de FDA (Análisis factorial discriminante)",
+        "op": [
+            "Es una técnica que permite asignar un individuo a un grupo con un error muy bajo",
+            "Es una técnica que permite hallar la combinación lineal de explicativas que diferencian a los grupos existentes",
+            "En clasificar individuos basándose en la distribución normal."
+        ],
+        "ok": 2
+    },
+    "12": {
+        "q": "¿Qué se puede utilizar para medir el poder discriminante?",
+        "op": [
+            "Alguna medida acumulativa de las varianzas dentro de los grupos",
+            "Algún criterio de dispersión de los centroides de los grupos con respecto a la media total de la población",
+            "Todas las anteriores"
+        ],
+        "ok": 3
+    },
+    "13": {
+        "q": "Para la medición de la media total de la varianza dentro de los grupos se emplea...",
+        "op": [
+            "una técnica de máxima verosimilitud",
+            "la matriz var-cov de cada uno de los grupos existentes",
+            "Ninguna de las anteriores"
+        ],
+        "ok": 2
+    },
+    "14": {
+        "q": "El efecto de introducir la proyección de d^tX viene dador por...",
+        "op": [
+            "Descomposición de la varianza de la proyección en términos de las varianzas entre y dentro de los grupos.",
+            "Por la inversa de la matriz var-cov del conjunto de entrenamiento.",
+            "Ningna de las anteriores."
+        ],
+        "ok": 1
+    },
+    "15": {
+        "q": "¿Qué se busca maximizar y minimizar para incrementar el poder discriminante?",
+        "op": [
+            "B (Varianza entre clústers) y W (Varianza dentro de los clústers), respectivamente.",
+            "B (Varianza dentro de los clústers) y W (Varianza entre clústers), respectivamente.",
+            "Ninguna de las anteriores."
+        ],
+        "ok": 1
+    },
+    "16": {
+        "q": "¿Cómo se calculan los factores discriminantes?",
+        "op": [
+            "A través del método de máxima verosimilitud",
+            "A partir de los autovectores asociados al autovalor más grande de la matriz W^-1B.",
+            "Ninguna de las anteriores"
+        ],
+        "ok": 2
+    },
+    "17": {
+        "q": "Si la matriz W^-1B es semidefinida positiva, eso implica que sus autovalores son positivos.",
+        "op": ["Verdadero", "Falso"],
+        "ok": 1
+    },
+    "18": {
+        "q": "¿Cómo se calcula el primer factor discriminante?",
+        "op": [
+            "Tomando el autovector con módulo unitario asociado al autovalor más grande de W^-1B",
+            "Tomando el autovector con mayor módulo",
+            "Ninguna de las anteriores"
+        ],
+        "ok": 1
+    },
+    "19": {
+        "q": "¿Qué es un factor discriminante?",
+        "op": [
+            "Es una combinación lineal o dirección que involucra a las explicativas del conjunto de datos que permite discriminar entre grupos.",
+            "Es la variable que mejor ayuda a discriminar dos individuos pertenecientes a dos grupos diferentes.",
+            "Ninguna de las anteriores"
+        ],
+        "ok": 1
+    },
+    "20": {
+        "q": "¿Que plantea el análisis discriminante lineal de Fisher?",
+        "op": [
+            "Define la regla de clasificación de un individuo una vez obtenidos los factores discriminantes.",
+            "Es otra técnica que permite calcular nuevos factores discriminantes.",
+            "Ninguna de las anteriores"
+        ],
+        "ok": 1
+    },
+    "21": {
+        "q": "¿Cómo el análisis discriminante de Fisher asigna a un nuevo individuo x_0 a un grupo?",
+        "op": [
+            "En base al centroide del grupo más cercano al score del individuo x_0 ",
+            "Aplicando una operación al score del individuo.",
+            "Ninguna de las anteriores"
+        ],
+        "ok": 1
+    },
+    "22": {
+        "q": "¿En qué grupos se clasifican las reglas discriminantes?",
+        "op": [
+            "Paramétricas y No paramétricas", 
+            "Paramétricas y de maxima verosimilitud", 
+            "Ninguna de las anteriores"],
+        "ok": 1
+    },
+    "23": {
+        "q": "La regla discriminante de máxima verosimilitud estima los parámetros de la distribución de probabilidad de X, que maximizan las probabilidades de asignar a un inidviduo en su grupo correcto.",
+        "op": ["Verdadero", "Falso"],
+        "ok": 1
+    },
+    "24": {
+        "q": "¿Qué exactamente mide la función L_k(x)?",
+        "op": [
+            "La probabilidad de asignar a una observación x al grupo k, basado en sus atributos.",
+            "La probabilidad de que un observación del grupo k tenga los atributos de x.",
+            "Ninguna de las anteriores"
+        ],
+        "ok": 2
+    },
+    "25": {
+        "q": "¿Qué suposiciones se deben de cumplir para aplicar LDA como regla discriminante?",
+        "op": [
+            "X debe seguir una normal multivariante y tanto el vector de medias y la matriz var-cov en cada grupo son iguales",
+            "X debe seguir una normal multivariante, el vector de medias es específico para cada grupo y todos ellos comparten la misma matriz var-cov.",
+            "Basta con que X siga una normal multivariante"
+        ],
+        "ok": 2
+    },
+    "26": {
+        "q": "En LDA: ¿Qué expresión se minimiza en L(x) para saber en qué grupo asignar x?",
+        "op": [
+            "El argumento de la función exponencial, que elevado a la raíz cuadrada es la distancia de Mahalanobis entre x y el centroide de un grupo.",
+            "Lo contrario al anterior, es decir, se busca la k que maximiza la distancia de Mahalanobis entre x y el centroide de un grupo.",
+            "El argumento de la función exponencial, que elevado a la raíz cuadrada es la distancia euclídea entre x y el centroide de un grupo."
+        ],
+        "ok": 2
+    },
+    "27": {
+        "q": "La regla de clasificación de Bayes se basa en maximizar la probabilidad de...",
+        "op": [
+            "De que una observación pertenezca a un grupo k, dado sus atributos.",
+            "De que una observación del grupo k tenga propiedades similares a una observación x.",
+            "Ninguna de las anteriores."
+        ],
+        "ok": 1
+    },
+    "28": {
+        "q": "Si no satisfacen las supuestos de LDA, entonces no es posible aplicarlo como regla discriminante.",
+        "op": [
+                "Verdadero",
+                "Falso. Se puede emplear, pero los resultados no serán precisos"
+            ],
+        "ok": 2
+    },
+    "29": {
+        "q": "¿Qué regla discriminante se emplea cuando se satisfacen todos los supuestos de LDA, menos el de matriz de covarianza compartida?",
+        "op": [
+            "Si no se satisface al menos un supuesto de LDA, no se puede aplicar ninguna regla discriminante",
+            "QDA",
+            "La regla discriminante de Fisher (LFD)"
+        ],
+        "ok": 2
+    },
+    "30": {
+        "q": "¿Cómo se puede emplear la clasificación binaria en el caso de que Y tome más de 2 valores?",
+        "op": [
+            "No es posible emplear esta regla en ese caso.",
+            "Definiendo tantos problemas de clasificación binaria como clases de Y."
+        ],
+        "ok": 2
+    },
+    "31": {
+        "q": "El modelo de regresión logística es una opción en el caso de que la variable respuesta Y tome 2 estados.",
+        "op": ["Verdadero", "Falso"],
+        "ok": 1
+    },
+    "32": {
+        "q": "En el modelo de regresión logística multinomial, ¿cómo se interpeta un coeficiente estimado beta_i?",
+        "op": [
+            "La tasa de cambio de los odds del modelo, tras el incremento unitario de Xi y y manteniendo constante las demás.",
+            "La tasa de cambio de los logits de pertenecer a la clase k con respecto al nivel de referencia, tras el incremento unitario de Xi y manteniendo constante las demás.",
+            "La tasa de cambio de los probabilidad de éxito de pertenecer a la clase k con respecto al nivel de referencia, tras el incremento unitario de Xi y manteniendo constante las demás."
+        ],
+        "ok": 2
+    },
+    "33": {
+        "q": "Los valores ajustados de un modelo logístico multinomial se representan a través de una tabla que indica las probabilidades de que un individuo pertenezca a cada una de las clases",
+        "op": ["Verdadero", "Falso"],
+        "ok": 1
+    },
+    "34": {
+        "q": "¿Qué parametros se deben definir en el algoritmo kNN para una observación x?",
+        "op": [
+            "El número de vecinos y la distancia máxima que pueden estar con respecto de x",
+            "Solo el número de vecinos"
+        ],
+        "ok": 1
+    },
+    "35": {
+        "q": "El método no parámetrico de los k vecinos más cercanos (kNN) se basa en calcular p_i(x): i = 1, 2, ..., g, a través de:",
+        "op": [
+            "La frecuencia de datos en torno a x que pertenecen al grupo i-ésimo con respecto del total, es decir, k.",
+            "Un método de máxima verosimilitud.",
+            "Ninguna de las anteriores."
+        ],
+        "ok": 1
+    }
+}

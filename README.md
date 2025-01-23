@@ -3,13 +3,14 @@ Programa con test de repaso
 
 Preguntas aleatorias con respuestas en orden aleatorio
 
+**Para ficheros con  preguntas escribirme.**
 
-![Ejemplo programa tests](archivos/ejemplo.png)
+![Ejemplo programa tests](fotos/ejemplo.png)
 
 ***
 **Updates**:
 
-* Test Medad
+
 
 ***
 
@@ -18,31 +19,33 @@ Descargar el repositorio
 
 En una terminal, situarse en el directorio con los ficheros
 
-Ejecutar: python3 test_icap.py  (lo mismo para test_sin_respuesta)
-
-Necesitas tener instalada la libreria **colorama**
+Ejecutar: python3 test_app.py
 
 ## Formas de añadir tus propias preguntas
-Actualmente, esta hecho de forma que tenga que tener obligatoriamente 4 respuestas.
-Debes añadir lineas de 7 en 7 en preguntas.txt siguiendo el formato:
 
-1- Pregunta               ( Se eliminan los 3 primeros caracteres en este caso 1- .)
+Para los json creados:
 
-a. Respuesta 1            ( Para toda respuesta se eliminan las 3 primeros caracteres.
+{
 
-b. Respuesta 2        
+    "idx": {
+        "q": "Pregunta",
+        "op": 
+        [
+            "Pregunta 1",
+            "Pregunta 2",
+            "...",
+            "Pregunta n"
+        ],
+        "ok": opcion correcta (1, 2, ..., n)
+    }
+}
 
-c. Respuesta 3
-
-d. Respuesta 4
-
-n                         ( n es la respuesta correcta: {a, b, c, d} tan solo la letra
-
-(Linea en blanco)
-
+* Idx es el numero de pregunta, debe ser el siguiente al ultimo ya puesto, no admite repetidos.
+* En las preguntas acepta un maximo de 8 respuestas.
+* La opcion correcta debe ser solo un numero. 
 ----x----
 
-Se puede usar de ejemplo el documento con las preguntas preguntas.txt
+Se puede usar de ejemplo los json de la carpeta preguntas.
 
 
 
