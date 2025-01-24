@@ -14,9 +14,13 @@ class no_valid_response(Exception):
 #Funcion para saber el sistema operativo
 def sistema_operativo():
     if os.name == 'nt':
+        import msvcrt 
         return 'cls'
     else:
+        import termios
         return 'clear'
+        
+
     
 #Funcion para limpiar pantalla
 def limpiar_pantalla(sop):
@@ -24,6 +28,18 @@ def limpiar_pantalla(sop):
         os.system('cls')
     else:
         os.system('clear')
+
+
+def limpiar_buffer(sop):
+    if sop=='cls':
+        module = __import__('msvcrt')
+        while module.kbhit():
+                module.getch()
+    
+    else:
+        module = __import__('termios')
+        module.tcflush(sys.stdin, termios.TCIFLUSH)
+
 
 
 #----Preguntas---
@@ -60,11 +76,13 @@ def asignaturas_disponibles():
 
 
 #Funcion para elegir la respuesta
-def obtener_respuesta(num):
+def obtener_respuesta(num, sop):
 
     while True:
             opciones = ['s', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
             try:
+                limpiar_buffer(sop)
+                limpiar_buffer(sop)
                 eleccion = input('\nRespuesta: ')
                 
                 if (eleccion not in opciones[0:(num+1)]):
@@ -83,6 +101,7 @@ def num_preguntas(num_max:int, tipo, preguntas, sop):
             try:
                 limpiar_pantalla(sop)
                 impresiones_asignaturas(tipo=tipo, preguntas=preguntas)
+                limpiar_buffer(sop)
                 eleccion = int(input('Total preguntas: '))
                 
                 if eleccion<1 or eleccion>num_max:
@@ -109,6 +128,7 @@ def obtener_asignatura(lista_asignaturas_disponibles:set, sop):
             try:
                 limpiar_pantalla(sop)
                 impresiones_asignaturas(tipo='Menu_principal', preguntas=None, impresion=impresion)
+                limpiar_buffer(sop)
                 eleccion = (input('\n¿De que asignatura desea los tests?: '))
                 
                 if (eleccion not in lista_asignaturas_disponibles):
@@ -213,11 +233,13 @@ def repetir(falladas, nsns, orden, sop, preguntas, resp, traduccion):
             print(f'{resp[u]}.- {pregunta["op"][u]}')
         
         
-        respuesta = obtener_respuesta(len(pregunta['op']))
+        respuesta = obtener_respuesta(len(pregunta['op']), sop)
 
         if respuesta == 's':
             print(f'\n La respuesta correcta era: {pregunta["op"][pregunta["ok"]-1]}\n')
             input('<Enter>')
+            time.sleep(0.5)
+
         
         else:
 
@@ -229,6 +251,7 @@ def repetir(falladas, nsns, orden, sop, preguntas, resp, traduccion):
                 falladas.append(i)
                 print(f'\n{Fore.RED}¡Falso!\n\n{Style.RESET_ALL}La respuesta correcta era: {pregunta["op"][pregunta["ok"]-1]}\n')
                 input('<Enter>')
+                time.sleep(0.5)
     
     limpiar_pantalla(sop)
     print(f'{Fore.RED}Has contestado todas las preguntas{Style.RESET_ALL}')
@@ -279,13 +302,14 @@ def main():
             print(f'{resp[u]}.- {pregunta["op"][u]}')
         
         
-        respuesta = obtener_respuesta(len(pregunta['op']))
+        respuesta = obtener_respuesta(len(pregunta['op']), sop)
 
         if respuesta == 's':
             jugador.no_contestadas += 1
             nsnc.append(i)
             print(f'\n La respuesta correcta era: {pregunta["op"][pregunta["ok"]-1]}\n')
             input('<Enter>')
+            time.sleep(0.5)
         
         else:
 
@@ -299,6 +323,7 @@ def main():
                 falladas.append(i)
                 print(f'\n{Fore.RED}¡Falso!\n\n{Style.RESET_ALL}La respuesta correcta era: {pregunta["op"][pregunta["ok"]-1]}\n')
                 input('<Enter>')
+                time.sleep(0.5)
 
 
     limpiar_pantalla(sop)
@@ -317,6 +342,7 @@ def main():
         nota_de_10('Hiciste un test perfecto!')
         time.sleep(1.5)
     else:
+        limpiar_buffer(sop)
         op_repe = input('¿Quieres repetir las falladas y no contestadas? (s)/n: ')
         if op_repe == 'n':
             limpiar_pantalla(sop)
