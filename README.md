@@ -21,6 +21,9 @@ En una terminal, situarse en el directorio con los ficheros
 
 Ejecutar: python3 test_app.py
 
+> [!IMPORTANT]
+> Necesitas las librerias de python: **termcolor** y **colorama**
+
 ## Formas de añadir tus propias preguntas
 
 Para los json creados:
@@ -46,6 +49,10 @@ Para los json creados:
 ----x----
 
 Se puede usar de ejemplo los json de la carpeta preguntas.
+
+
+> [!NOTE]
+> Las 151 preguntas de icap estan pendientes de ser cambiadas a json
 
 
 
