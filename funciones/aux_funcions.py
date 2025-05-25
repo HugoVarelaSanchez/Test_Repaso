@@ -1,4 +1,23 @@
-#Paquetes de python
+#
+# Copyright (C) 2025 Hugo Varela Sanchez (HugoVarelaSanchez)
+# 
+# Este archivo es parte de Test_Repaso
+# GitHub: https://github.com/HugoVarelaSanchez/Test_Repaso
+# 
+# Test_Repaso es software libre: puedes redistribuirlo y/o modificarlo
+# bajo los términos de la Licencia Pública General GNU versión 3
+# publicada por la Free Software Foundation.
+# 
+# Test_Repaso se distribuye con la esperanza de que sea útil,
+# pero SIN NINGUNA GARANTÍA; sin siquiera la garantía implícita de
+# COMERCIABILIDAD o IDONEIDAD PARA UN PROPÓSITO PARTICULAR. Consulta
+# la Licencia Pública General GNU para más detalles.
+# 
+# Deberías haber recibido una copia de la Licencia Pública General GNU
+# junto con Test_Repaso. Si no es así, consulta <https://www.gnu.org/licenses/>.
+#
+
+
 from colorama import Style, Fore
 from termcolor import colored
 import os, time, sys, random, json
@@ -247,7 +266,7 @@ def repetir(falladas, nsns, orden, sop, preguntas, resp, traduccion):
 
         idx = orden[i-1]
 
-        pregunta = preguntas[str(idx)]
+        pregunta = mezclar_opciones(preguntas[str(idx)])
         print(f'{i}. {pregunta["q"]}\n')
 
         for u in range(0, len(pregunta["op"])):
@@ -388,7 +407,7 @@ def main():
 
             idx = orden[i-1]
 
-            pregunta = preguntas[str(idx)]
+            pregunta = mezclar_opciones(preguntas[str(idx)])
             print(f'{i}. {pregunta["q"]}\n')
 
             for u in range(0, len(pregunta["op"])):
