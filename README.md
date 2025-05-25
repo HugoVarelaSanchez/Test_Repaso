@@ -180,8 +180,7 @@ Los archivos de preguntas utilizan formato JSON con la siguiente estructura:
 
 ¡Las contribuciones son bienvenidas! Si tienes preguntas para añadir o mejoras que sugerir:
 
-1. **Para nuevas preguntas**: Contacta con el autor
-2. **Para mejoras de código**: 
+**Para mejoras de código**: 
    - Fork el proyecto
    - Crea una rama para tu feature
    - Haz commit de tus cambios
@@ -194,9 +193,7 @@ Los archivos de preguntas utilizan formato JSON con la siguiente estructura:
 ## Registro de Cambios
 
 ### Versión actual
-- Sistema de puntuación implementado
-- Modo repetición de preguntas falladas
-- Soporte para múltiples asignaturas y categorías
+- Base
 
 ## Licencia
 
