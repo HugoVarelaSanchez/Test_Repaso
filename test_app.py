@@ -17,7 +17,7 @@
 # junto con Test_Repaso. Si no es así, consulta <https://www.gnu.org/licenses/>.
 #
 
-from funciones.aux_funcions import *
+from funciones.main import main
 try:
     main()
 except KeyboardInterrupt:
