@@ -17,6 +17,34 @@
 # junto con Test_Repaso. Si no es así, consulta <https://www.gnu.org/licenses/>.
 #
 
+import os, sys
 
-class no_valid_response(Exception):
-    pass
+
+def sistema_operativo():
+    '''Funcion para saber el sistema operativo'''
+    if os.name == 'nt':
+        return 'cls'
+    else:
+        return 'clear'
+        
+    
+def limpiar_pantalla(sop):
+    '''Funcion para limpiar la pantalla segun el sistema operativo'''
+    if sop == 'cls':
+        os.system('cls')
+    else:
+        import termios
+        os.system('clear')
+
+
+def limpiar_buffer(sop):
+    '''Funcion para limpiar el buffer de entrada segun el sistema operativo'''
+
+    if sop=='cls':
+        module = __import__('msvcrt')
+        while module.kbhit():
+                module.getch()
+    
+    else:
+        module = __import__('termios')
+        module.tcflush(sys.stdin, module.TCIFLUSH)

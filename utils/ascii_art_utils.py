@@ -17,6 +17,8 @@
 # junto con Test_Repaso. Si no es así, consulta <https://www.gnu.org/licenses/>.
 #
 
+
+# Abecedario para la conversión de letras a arte ASCII
 abecedario = {
     'a': ['╔══╗', '║╔╗║', '║╚╝║', '║╔╗║', '║║║║', '╚╝╚╝'],
     'b': ['╔══╗', '║╔╗║', '║╚╝╚╗', '║╔═╗║', '║╚═╝║', '╚═══╝'],
@@ -35,7 +37,7 @@ abecedario = {
     'o': ['╔═══╗', '║╔═╗║', '║║ ║║', '║║ ║║', '║╚═╝║', '╚═══╝'],
     'p': ['╔══╗', '║╔╗║', '║╚╝║', '║╔═╝', '║║  ', '╚╝  '],
     'q': ['╔═══╗', '║╔═╗║', '║║ ║║', '║║╔╝║', '║╚╝ ║', '╚═══╝'],
-    'r': ['╔═══╗ ', '║╔═╗║ ', '║╚═╝║', '║╔╗╔╝', '║║║║ ', '╚╝╚╝ '],
+    'r': ['╔═══╗ ', '║╔═╗║ ', '║╚═╝║ ', '║╔╗╔╝ ', '║║║║  ', '╚╝╚╝  '],
     's': ['╔══╗', '║╔═╝', '║╚═╗', '╚═╗║', '╔═╝║', '╚══╝'],
     't': ['╔════╗', '╚═╗╔═╝', '  ║║  ', '  ║║  ', '  ║║  ', '  ╚╝  '],
     'u': ['╔╗ ╔╗', '║║ ║║', '║║ ║║', '║║ ║║', '║╚═╝║', '╚═══╝'],
@@ -59,8 +61,8 @@ abecedario = {
 
 
 
-
 def escribir_palabra(palabra):
+    '''Convierte una palabra en arte ASCII y la imprime.'''
     palabra = palabra.lower()
     lineas = ['' for _ in range(6)]  
 
@@ -75,4 +77,3 @@ def escribir_palabra(palabra):
 
     for linea in lineas:
         print(linea)  
-

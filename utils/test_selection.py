@@ -17,17 +17,14 @@
 # junto con Test_Repaso. Si no es así, consulta <https://www.gnu.org/licenses/>.
 #
 
-
+import os, time, sys
 
 from colorama import Style, Fore
-from termcolor import colored
-import os, time, sys, random, json
-
-from funciones.os_functions import limpiar_pantalla, limpiar_buffer
-from funciones.aux_preguntas import asignaturas_disponibles
-from funciones.conversion_letras import escribir_palabra
-from funciones.visualizar import impresiones_asignaturas, texto_preguntas
-from funciones.exceptions import no_valid_response
+from utils.os_utils import limpiar_pantalla, limpiar_buffer
+from utils.questions_utils import asignaturas_disponibles
+from utils.ascii_art_utils import escribir_palabra
+from utils.display_utils import impresiones_asignaturas, texto_preguntas
+from utils.exceptions_utils import no_valid_response
 
 
     #?=====================================================
@@ -38,13 +35,14 @@ from funciones.exceptions import no_valid_response
 def obtener_asignatura(lista_asignaturas_disponibles:list, sop):
     impresion = ''
     for i in lista_asignaturas_disponibles: impresion += i+' '
+    
     while True:
-
             try:
                 limpiar_pantalla(sop)
                 impresiones_asignaturas(tipo='Menu_principal', preguntas=None)
-                print(f'Asignaturas disponibles: {Fore.RED}{impresion}{Style.RESET_ALL}')
+                print(f'\n\n\nAsignaturas disponibles: {Fore.RED}{impresion}{Style.RESET_ALL}')
                 limpiar_buffer(sop)
+
                 eleccion = (input('\n¿De que asignatura desea los tests?: '))
                 
                 if (eleccion not in lista_asignaturas_disponibles):
@@ -55,14 +53,11 @@ def obtener_asignatura(lista_asignaturas_disponibles:list, sop):
             except ValueError:
                 print(f'\n\n{Fore.YELLOW}Debes introducir una asignatura valida.{Style.RESET_ALL}\n')
                 time.sleep(2)
+
             except no_valid_response:
                 print(f'\n{Fore.YELLOW}Por favor escriba tal cual la asignatura disponible que quiera:\n{Fore.RED}{impresion}{Style.RESET_ALL}')
                 time.sleep(2)
     return eleccion
-
-#print(f'\n{Fore.YELLOW}Las asignaturas disponibles son:\n{Fore.RED}impresion\n{Fore.YELLOW}Por favor escribala igual{Style.RESET_ALL}\n')
-
-
 
 
     #?=====================================================
@@ -72,7 +67,9 @@ def obtener_asignatura(lista_asignaturas_disponibles:list, sop):
     
 
 def elegir_categoria(asignatura, sop):
+
     categorias = os.listdir(f'asignaturas/{asignatura}')
+
     if len(categorias)>0:
         opciones = categorias.copy()
         opciones.append('r')
@@ -80,11 +77,13 @@ def elegir_categoria(asignatura, sop):
         for i in categorias: impresion += i+' '
 
         while True:
+
             try:
                 limpiar_pantalla(sop)
                 escribir_palabra(f'test {asignatura}')
                 print(f'\n\n\nCategorias disponibles para {asignatura}: {Fore.RED}{impresion}{Style.RESET_ALL}')
                 limpiar_buffer(sop)
+
                 eleccion = (input('\n¿De que categoria desea los tests?: '))
                 
                 if (eleccion not in opciones):
@@ -95,8 +94,9 @@ def elegir_categoria(asignatura, sop):
             except ValueError:
                 print(f'\n\n{Fore.YELLOW}Debes introducir una categoria valida.{Style.RESET_ALL}\n')
                 time.sleep(2)
+
             except no_valid_response:
-                print(f'\n{Fore.YELLOW}Por favor escriba tal cual la categoria disponible que quiera:\n{Fore.RED}{impresion}{Style.RESET_ALL}\n Si quiere retroceder escriba [ r ] ')
+                print(f'\n{Fore.YELLOW}Por favor escriba tal cual la categoria disponible que quiera:\n{Fore.RED}{impresion}{Style.RESET_ALL}\n\nSi quiere retroceder escriba [ r ] ')
                 time.sleep(2)
         
         return eleccion
@@ -117,23 +117,20 @@ def elegir_categoria(asignatura, sop):
 def escoger_test(sop, asignatura, categoria):
     
     while True:
+
         if(len(os.listdir(f'asignaturas'))<1):
             limpiar_pantalla(sop)
             print(f'{Fore.RED}No hay ninguna informacion{Style.RESET_ALL}')
             time.sleep(1.5)
             sys.exit()
         
+
         elif asignatura == '':
             categoria = ''
             asignatura = obtener_asignatura(asignaturas_disponibles(), sop)
-            
-
-           
         
 
-        while True:
-
-                
+        while True:  
             
             if (len(os.listdir(f'asignaturas/{asignatura}'))<1):
                 

@@ -16,11 +16,15 @@
 # Deberías haber recibido una copia de la Licencia Pública General GNU
 # junto con Test_Repaso. Si no es así, consulta <https://www.gnu.org/licenses/>.
 #
+from logger_config import logger
+from utils.main import main
 
-from funciones.main import main
 try:
+    logger.info('Iniciando Test APP')
     main()
 except KeyboardInterrupt:
+    logger.info('Programa cerrado por el usuario')
     print('\n\nGracias por usar Test APP!\nCerrando programa.')
 except Exception as e:
+    logger.error(f'Error inesperado: {e}', exc_info=True)
     print(f'Error inesperado {e}')

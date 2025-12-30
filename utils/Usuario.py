@@ -20,6 +20,8 @@
 from colorama import Fore, Style
 
 class Usuario:
+    '''Clase que representa a un usuario con estadísticas de aciertos, fallos y no contestadas.'''
+    
     def __init__(self, acertadas=0, falladas=0, no_contestadas=0):
         self.acertadas = acertadas
         self.falladas = falladas

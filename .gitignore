@@ -4,8 +4,10 @@ __pycache__/
 *$py.class
 
 # C extensions
-*.so
+asignaturas/XP/
 
+*.so
+logs/
 # Distribution / packaging
 .Python
 build/
