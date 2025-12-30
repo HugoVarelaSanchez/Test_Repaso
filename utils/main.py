@@ -77,7 +77,7 @@ def test(asignatura, categoria, preguntas, sop, resp, traduccion, first_test=Tru
                 print(f'\n La respuesta correcta era: {pregunta["op"][pregunta["ok"]-1]}\n')
 
                 if pregunta.get('jus'):
-                    print(f'Justificacion: \n{pregunta["jus"]}')
+                    print(f'{Fore.GREEN}Justificacion:{Style.RESET_ALL} \n{pregunta["jus"]}\n\n')
 
                 input('<Enter>')
                 
@@ -103,7 +103,7 @@ def test(asignatura, categoria, preguntas, sop, resp, traduccion, first_test=Tru
                     print(f'\n{Fore.RED}¡Falso!\n\n{Style.RESET_ALL}La respuesta correcta era: {pregunta["op"][pregunta["ok"]-1]}\n')
                     
                     if pregunta.get('jus'):
-                        print(f'Justificacion: \n{pregunta["jus"]}')
+                        print(f'{Fore.GREEN}Justificacion:{Style.RESET_ALL} \n{pregunta["jus"]}\n\n')
                     
                     input('<Enter>')
 
