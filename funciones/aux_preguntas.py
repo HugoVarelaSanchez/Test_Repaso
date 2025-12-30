@@ -48,7 +48,8 @@ def mezclar_opciones(pregunta):
 
     return {'q': pregunta['q'],
             'op': opciones,
-            'ok': nueva_correcta
+            'ok': nueva_correcta,
+            'jus': pregunta.get('jus', '') # Campo opcional, las preguntas pueden tener una justificacion
             }
 
 

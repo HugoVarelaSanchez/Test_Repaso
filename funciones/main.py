@@ -53,6 +53,8 @@ def repetir(falladas, nsns, orden, sop, preguntas, resp, traduccion):
 
         if respuesta == 's':
             print(f'\n La respuesta correcta era: {pregunta["op"][pregunta["ok"]-1]}\n')
+            if pregunta.get('jus'):
+                print(f'Justificacion: \n{pregunta["jus"]}\n\n')
             input('<Enter>')
             time.sleep(0.5)
 
@@ -66,6 +68,8 @@ def repetir(falladas, nsns, orden, sop, preguntas, resp, traduccion):
             else:
                 falladas.append(i)
                 print(f'\n{Fore.RED}¡Falso!\n\n{Style.RESET_ALL}La respuesta correcta era: {pregunta["op"][pregunta["ok"]-1]}\n')
+                if pregunta.get('jus'):
+                    print(f'Justificacion: \n{pregunta["jus"]}')
                 input('<Enter>')
                 time.sleep(0.5)
     
@@ -133,6 +137,10 @@ def main():
                 jugador.no_contestadas += 1
                 nsnc.append(i)
                 print(f'\n La respuesta correcta era: {pregunta["op"][pregunta["ok"]-1]}\n')
+
+                if pregunta.get('jus'):
+                    print(f'Justificacion: \n{pregunta["jus"]}')
+
                 input('<Enter>')
                 time.sleep(0.5)
             
@@ -147,6 +155,8 @@ def main():
                     jugador.falladas += 1
                     falladas.append(i)
                     print(f'\n{Fore.RED}¡Falso!\n\n{Style.RESET_ALL}La respuesta correcta era: {pregunta["op"][pregunta["ok"]-1]}\n')
+                    if pregunta.get('jus'):
+                        print(f'Justificacion: \n{pregunta["jus"]}')
                     input('<Enter>')
                     time.sleep(0.5)
 

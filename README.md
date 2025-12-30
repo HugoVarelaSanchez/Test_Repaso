@@ -112,7 +112,8 @@ Los archivos de preguntas utilizan formato JSON con la siguiente estructura:
             "Tercera opción",
             "Cuarta opción"
         ],
-        "ok": 2
+        "ok": 2,
+        "jus": "Justificacion OPCIONAL de la pregunta\n <- para salto de linea"
     },
 
     "2": {
@@ -132,6 +133,7 @@ Los archivos de preguntas utilizan formato JSON con la siguiente estructura:
 - **`q`**: Texto de la pregunta
 - **`op`**: Array de opciones de respuesta (máximo 8 opciones)
 - **`ok`**: Número de la opción correcta (1-8)
+- **`jus`**: Campo opcional para poner una justificacion de la pregunta.
 
 
 ## Añadir Tus Propias Preguntas
